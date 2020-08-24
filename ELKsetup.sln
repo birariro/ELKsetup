@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ELKsetup", "ELKsetup\ELKsetup.csproj", "{7C2269D3-4478-4B9D-AC49-36EF79F066A3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7C2269D3-4478-4B9D-AC49-36EF79F066A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C2269D3-4478-4B9D-AC49-36EF79F066A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C2269D3-4478-4B9D-AC49-36EF79F066A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C2269D3-4478-4B9D-AC49-36EF79F066A3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0A021B93-E637-4B90-B75F-C00C6559D477}
+	EndGlobalSection
+EndGlobal
