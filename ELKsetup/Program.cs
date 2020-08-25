@@ -7,8 +7,11 @@ namespace ELKsetup
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("### ELK Download Start ###");
             ELK_DownLoad();
         }
+
+        
 
         static async void ELK_DownLoad()
         {
