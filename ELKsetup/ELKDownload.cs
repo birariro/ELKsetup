@@ -25,8 +25,8 @@ namespace ELKsetup
 
             for (byte i =0; i< DOWNLOAD_COUNT; i++)
             {
-                string fileName = DownLoadUri[i].Split("/")[5];
-                string downloadPath = @"D:\ProjectPath\Hanium\ELKsetup\ELKDownload\" + fileName;
+                string fileName = DownLoadUri[i].Split("/")[^1];
+                string downloadPath = fileName;//실행경로에 다운받는다.
 
                 ELKWebDownLoad(DownLoadUri[i], downloadPath,i);
             }
@@ -45,15 +45,15 @@ namespace ELKsetup
                 filebeat_Status= filebeat_Progress.WriteProgressBar(AllDownLoadStatus[3]);
 
                 Console.WriteLine(
-                    $"[elasticsearch] : {elasticsearch_Status}\n" +
-                    $"[   logstash  ] : {logstash_Status}\n" +
-                    $"[    kibana   ] : {kibana_Status}\n" +
-                    $"[   filebeat  ] : {filebeat_Status}\n");
+                    $"[   Elastic   ] : {elasticsearch_Status}\n" +
+                    $"[   Logstash  ] : {logstash_Status}\n" +
+                    $"[    Kibana   ] : {kibana_Status}\n" +
+                    $"[   Filebeat  ] : {filebeat_Status}\n");
 
                 
             } while (!(AllDownLoadStatus[0] == 100 && AllDownLoadStatus[1] == 100 && AllDownLoadStatus[2] == 100 && AllDownLoadStatus[3] == 100));
 
-            Console.ReadLine();     
+                
         }
 
         private async void ELKWebDownLoad(string url ,string path, byte tag)
@@ -66,9 +66,7 @@ namespace ELKsetup
                 //webClient.DownloadProgressChanged += WebClient_DownloadProgressChanged; 
 
                 webClient.DownloadFileAsync(uri, path);
-
                 webClient.Dispose();
-
             }
             catch (Exception e)
             {
