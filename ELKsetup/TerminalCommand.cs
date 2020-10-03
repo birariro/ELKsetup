@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.IO;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -10,16 +11,18 @@ namespace ELKsetup
     {
         public static void Command(string command)
         {
+            
             Process proc = new System.Diagnostics.Process();
             proc.StartInfo.FileName = "/bin/bash";
             proc.StartInfo.Arguments = "-c \" " + command + " \"";
             proc.StartInfo.UseShellExecute = false;
-            proc.StartInfo.RedirectStandardOutput = true;
+            proc.StartInfo.RedirectStandardOutput = true; //데이터 가져오기 안됨 ㅡㅡ
             proc.Start();
-            Console.WriteLine(proc.StandardOutput.ReadToEnd());
 
-
-            //코드 출처 https://askubuntu.com/questions/506985/c-opening-the-terminal-process-and-pass-commands
+            string result = proc.StandardOutput.ReadToEnd();
+            Console.WriteLine(result);
+           
+            
         }
     }
 }

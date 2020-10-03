@@ -12,16 +12,19 @@ namespace ELKsetup
     class ELKDownload
     {
         const int DOWNLOAD_COUNT = 4;
+        string ELKversion = null;
         
-        public string[] DownLoadUri = new string[]{
-            "https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.1.0-amd64.deb",
-            "https://artifacts.elastic.co/downloads/logstash/logstash-7.1.0.deb",
-            "https://artifacts.elastic.co/downloads/kibana/kibana-7.1.0-amd64.deb",
-            "https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-7.1.0-amd64.deb"};
         public int[] AllDownLoadStatus = new int[DOWNLOAD_COUNT];
 
-        public async Task DownLoad()
-        {          
+        public async Task DownLoad(string version)
+        {
+
+
+            string[] DownLoadUri = new string[]{
+            "https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-"+version+"-amd64.deb",
+            "https://artifacts.elastic.co/downloads/logstash/logstash-"+version+".deb",
+            "https://artifacts.elastic.co/downloads/kibana/kibana-"+version+"-amd64.deb",
+            "https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-"+version+"-amd64.deb"};
 
             for (byte i =0; i< DOWNLOAD_COUNT; i++)
             {
