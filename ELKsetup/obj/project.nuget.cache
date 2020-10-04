@@ -1,12 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rSTdl0iKa9+2QnU51EzbIcHCf+CJTmOi6FGAQAxPknzswG03Sp2AAOHmZp1tSrWcAeNMc/LtsKJvvC0BMyR7kQ==",
+  "dgSpecHash": "qSBgxYssXztqbQUVzqgHUH4nU5XLnoqajbkvyAxEcWQnMe7eiN+0ZxmiEPWcGiAjFPpWZ2Fekw8amTiznOYIMQ==",
   "success": true,
-  "projectFilePath": "D:\\ProjectPath\\HaniumGit\\ELKsetup\\ELKsetup\\ELKsetup.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\vps32\\.nuget\\packages\\microsoft.netcore.app.runtime.linux-x64\\3.1.5\\microsoft.netcore.app.runtime.linux-x64.3.1.5.nupkg.sha512",
-    "C:\\Users\\vps32\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.linux-x64\\3.1.5\\microsoft.aspnetcore.app.runtime.linux-x64.3.1.5.nupkg.sha512",
-    "C:\\Users\\vps32\\.nuget\\packages\\microsoft.netcore.app.host.linux-x64\\3.1.5\\microsoft.netcore.app.host.linux-x64.3.1.5.nupkg.sha512"
-  ],
+  "projectFilePath": "D:\\ProjectPath\\GitOpen\\ELKsetup\\ELKsetup\\ELKsetup.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

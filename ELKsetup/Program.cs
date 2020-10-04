@@ -31,14 +31,14 @@ namespace ELKsetup
                     Console.WriteLine("### ELK Download Start ###");
                     Console.Write("ELK Version Input (Default 7.9.1) : "); //7.9.1
                     version = Console.ReadLine();
-                    if (version == null || version.Length < 5 || version.Length > 6) version = "7.9.1";
+                    if (version.Length < 5 || !string.IsNullOrWhiteSpace(version)) version = "7.9.1";
                     ELK_DownLoad(version);
                     break;
 
                 case "2":
                     Console.Write("ELK Version Input (Default 7.9.1) : ");
                     version = Console.ReadLine();
-                    if (version == null || version.Length < 5 || version.Length > 6) version = "7.9.1";
+                    if (version.Length < 5 || !string.IsNullOrWhiteSpace(version)) version = "7.9.1";
                     Console.WriteLine("### ELK Setup ###");
                     ELK_setup(version);
                     break;
@@ -99,8 +99,8 @@ namespace ELKsetup
             if (serverIPList.Length >= 2) serverIP = SelectIP(serverIPList); //ip가 여러개라면 선택할수있게한다.
             else
             {
-                if(serverIPList[0]!=null) serverIP = serverIPList[0];
-                else
+                if(serverIPList[0]!=null) serverIP = serverIPList[0]; //서버 ip가 하나라면 그대로 간다.
+                else //서버 ip를 구하지못하였을때는 사용자에게 입력하게한다.
                 {
                     Console.Write("Input IP : ");
                     serverIP= Console.ReadLine();

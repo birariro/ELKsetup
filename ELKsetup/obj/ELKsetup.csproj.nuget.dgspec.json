@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\ProjectPath\\HaniumGit\\ELKsetup\\ELKsetup\\ELKsetup.csproj": {}
+    "D:\\ProjectPath\\GitOpen\\ELKsetup\\ELKsetup\\ELKsetup.csproj": {}
   },
   "projects": {
-    "D:\\ProjectPath\\HaniumGit\\ELKsetup\\ELKsetup\\ELKsetup.csproj": {
+    "D:\\ProjectPath\\GitOpen\\ELKsetup\\ELKsetup\\ELKsetup.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ProjectPath\\HaniumGit\\ELKsetup\\ELKsetup\\ELKsetup.csproj",
+        "projectUniqueName": "D:\\ProjectPath\\GitOpen\\ELKsetup\\ELKsetup\\ELKsetup.csproj",
         "projectName": "ELKsetup",
-        "projectPath": "D:\\ProjectPath\\HaniumGit\\ELKsetup\\ELKsetup\\ELKsetup.csproj",
+        "projectPath": "D:\\ProjectPath\\GitOpen\\ELKsetup\\ELKsetup\\ELKsetup.csproj",
         "packagesPath": "C:\\Users\\vps32\\.nuget\\packages\\",
-        "outputPath": "D:\\ProjectPath\\HaniumGit\\ELKsetup\\ELKsetup\\obj\\",
+        "outputPath": "D:\\ProjectPath\\GitOpen\\ELKsetup\\ELKsetup\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -51,31 +51,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Runtime.linux-x64",
-              "version": "[3.1.5, 3.1.5]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.linux-x64",
-              "version": "[3.1.5, 3.1.5]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Runtime.linux-x64",
-              "version": "[3.1.5, 3.1.5]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
-        }
-      },
-      "runtimes": {
-        "linux-x64": {
-          "#import": []
         }
       }
     }
