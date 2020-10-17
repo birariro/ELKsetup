@@ -47,7 +47,7 @@ namespace ELKsetup
             for (int i = 0; i < KibanaOrigin.Length; i++)
             {
                 if (KibanaOrigin[i].Contains("server.port")) Kibana[i] = "server.port : 5601";                
-                else if (KibanaOrigin[i].Contains("server.host")) Kibana[i] = "server.host : \"0.0.0.0\"";
+                else if (KibanaOrigin[i].Contains("server.host: \"localhost\"")) Kibana[i] = "server.host : \"0.0.0.0\"";
                 else if (KibanaOrigin[i].Contains("elasticsearch.hosts")) Kibana[i] = "elasticsearch.hosts: [\"http://"+IP+":9200\"]";
 
                 else Kibana[i] = KibanaOrigin[i];
