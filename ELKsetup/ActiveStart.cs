@@ -17,7 +17,7 @@ namespace ELKsetup
             {
                 bool breakFlag = true;
                 TerminalCommand.Command($"sudo  service {checkList[i]} start && exit;");
-                Console.WriteLine("명령 실행 완료 슬립 시작");
+                
                 Thread.Sleep(5000); //실행후  대기 너무 빠르게 실행되면 문제가 될 가능성이있다.
                 do 
                 {
